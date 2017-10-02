@@ -18,6 +18,11 @@
       "js": ["content_scripts/pwHelp.js"]
     }
   ],
+  "browser_action": {
+    "default_icon": "icons/beasts-32.png",
+    "default_title": "pwHelp",
+    "default_popup": "popup/showPw.html"
+  },
   "permissions": [
     "storage",
     "webRequest",

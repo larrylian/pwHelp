@@ -20,7 +20,6 @@ function fillValue(values) {
 function fillStart() {
     var startMsg = "开始自动填充 => " + url;
     console.log(startMsg);
-    console.log(localData[url]);
     if (localData[url] != undefined) {
         console.log(localData[url]);
         fillValue(localData[url]);
@@ -54,7 +53,7 @@ function saveData() {
  * 获取本页面的表单信息
  */
 function getData() {
-    var data = {"name":"value"};
+    var data = {};
     $("input").each(function () {
         var type = $(this).attr("type");
         if (type == "text" || type =="password" || type == "" || type==undefined) {
@@ -64,6 +63,8 @@ function getData() {
 
         }
     });
+    //保存页面的title到source_title字段中
+    data["source_title"]= $(document).attr("title");
     console.log($("input"));
     console.log("储存表单数据：");
     console.log(data);

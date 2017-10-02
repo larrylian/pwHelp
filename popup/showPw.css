@@ -1,0 +1,69 @@
+.container {
+    width: 400px;
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.item {
+    width: 390px;
+    border: 1px solid #99CCFF;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+}
+.title {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #99CCFF;
+    font-size: 14px;
+}
+.title:hover {
+    background-color: #CCCCCC;
+}
+.table {
+    width: 380px;
+    font-size: 12px;
+}
+.table tr:hover {
+    background-color: #CCCCCC;
+}
+.table tr {
+    background-color: white;
+}
+.table th {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.table td {
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+.table tr {
+    border-bottom: 1px solid gainsboro;
+}
+.table tr:last-child {
+    border-bottom: 0px solid gainsboro;
+}
+.table tr th:first-child {
+    border-right: 1px solid gainsboro;
+}
+.table tr td:first-child {
+    border-right: 1px solid gainsboro;
+}
+.hide {
+    display: none;
+}
+/*控制下拉列表收缩*/
+.detail {
+    display: none;
+}
+.item:hover .detail {
+    display: block;
+}
