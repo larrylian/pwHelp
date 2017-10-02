@@ -1,0 +1,27 @@
+{
+
+  "description": "自动填充密码组件",
+  "manifest_version": 2,
+  "name": "PwHelp",
+  "version": "1.0",
+  "homepage_url": "https://github.com/larrylian",
+  "icons": {
+    "48": "icons/beasts-48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content_scripts/jquery-1.9.1.min.js"]
+    },
+    {
+      "matches": ["*://*/*"],
+      "js": ["content_scripts/pwHelp.js"]
+    }
+  ],
+  "permissions": [
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ]
+}
